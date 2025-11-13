@@ -12,7 +12,7 @@ npm install -g @nestjs/cli
 ## ⭐ **Create New Project**
 
 ```
-nest new project-name
+nest new .
 ```
 
 ## ⭐ **Start Development Server**
