@@ -1,121 +1,215 @@
 
-# NestJS Basic Commands a Developer Should Know
+---
 
-Here's a structured command reference for NestJS development (Windows/Linux/macOS compatible):
+# ✅ **NestJS Basic Commands (Copy-Paste Ready)**
 
-## **Installation & Project Setup**
-```bash
-# Install NestJS CLI globally
+## ⭐ **Installation**
+
+```
 npm install -g @nestjs/cli
+```
 
-# Create new NestJS project (interactive setup)
+## ⭐ **Create New Project**
+
+```
 nest new project-name
+```
 
-# Start development server (from project root)
+## ⭐ **Start Development Server**
+
+```
 npm run start:dev
 ```
 
-## **Database & Prisma Setup**
-```bash
-# Install Prisma as dev dependency
+---
+
+# 🗄️ **Prisma & Database Commands**
+
+## **Install Prisma**
+
+```
 npm install -D prisma
+```
 
-# Initialize Prisma (creates prisma/schema.prisma)
+## **Initialize Prisma**
+
+```
 npx prisma init
+```
 
-# Install Prisma Client
+## **Install Prisma Client**
+
+```
 npm install @prisma/client
+```
 
-# Generate Prisma Client after schema changes
+## **Generate Prisma Client**
+
+```
 npx prisma generate
+```
 
-# Run database migrations
+## **Run Migration**
+
+```
 npx prisma migrate dev --name migration_name
+```
 
-# Open Prisma Studio (database GUI)
+## **Open Prisma Studio**
+
+```
 npx prisma studio
 ```
 
-## **Authentication Packages**
-```bash
-# Install bcrypt for password hashing
+---
+
+# 🔐 **Authentication Packages**
+
+## **Install bcrypt**
+
+```
 npm install bcrypt
+```
+
+## **Install bcrypt types**
+
+```
 npm install -D @types/bcrypt
+```
 
-# Install JSON Web Tokens (corrected spelling)
+## **Install JSON Web Token**
+
+```
 npm install jsonwebtoken
-npm install -D @types/jsonwebtoken
+```
 
-# OR install NestJS JWT module (recommended)
+## **Install JWT types**
+
+```
+npm install -D @types/jsonwebtoken
+```
+
+## **Install NestJS JWT module (recommended)**
+
+```
 npm install @nestjs/jwt
 ```
 
-## **Development Commands**
-```bash
-# Start in watch mode (auto-reload)
+---
+
+# ⚙️ **Development Commands**
+
+## **Start in watch mode**
+
+```
 npm run start:dev
+```
 
-# Start in debug mode
+## **Start in debug mode**
+
+```
 npm run start:debug
+```
 
-# Build for production
+## **Build project**
+
+```
 npm run build
+```
 
-# Start production build
+## **Start production build**
+
+```
 npm run start:prod
+```
 
-# Lint code
+## **Lint code**
+
+```
 npm run lint
+```
 
-# Format code
+## **Format code**
+
+```
 npm run format
 ```
 
-## **CRUD Generation**
-```bash
-# Generate module, service, and controller
-nest generate resource users
+---
 
-# Generate individual components
+# 🏗️ **Generate CRUD**
+
+```
+nest generate resource users
+```
+
+## **Generate Module**
+
+```
 nest generate module users
+```
+
+## **Generate Controller**
+
+```
 nest generate controller users
+```
+
+## **Generate Service**
+
+```
 nest generate service users
 ```
 
-## **Testing**
-```bash
-# Run unit tests
+---
+
+# 🧪 **Testing**
+
+## **Run unit tests**
+
+```
 npm run test
+```
 
-# Run e2e tests
+## **Run e2e tests**
+
+```
 npm run test:e2e
+```
 
-# Run tests in watch mode
+## **Run tests in watch mode**
+
+```
 npm run test:watch
+```
 
-# Generate coverage report
+## **Generate coverage**
+
+```
 npm run test:cov
 ```
 
-## **Package Management**
-```bash
-# Install dependency
+---
+
+# 📦 **Package Management**
+
+## **Install dependency**
+
+```
 npm install package-name
+```
 
-# Install dev dependency
+## **Install dev dependency**
+
+```
 npm install -D package-name
+```
 
-# Uninstall package
+## **Uninstall package**
+
+```
 npm uninstall package-name
 ```
 
 ---
 
-### **Key Corrections & Best Practices**
-- ✅ Fixed `npm -D prisma` → `npm install -D prisma`
-- ✅ Fixed `npm prisma init` → `npx prisma init`
-- ✅ Fixed typo: `jsonwebtocken` → `jsonwebtoken`
-- ✅ Use `npx` for CLI tools like Prisma
-- ✅ Use `@nestjs/jwt` instead of manual JWT implementation when possible
-
-**Pro Tip**: Run `nest --help` to see all available CLI commands!
